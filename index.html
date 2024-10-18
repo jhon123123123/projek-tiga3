@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Yoana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Yoana project</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#tutors">Tutors</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="" class="tbl-biru">sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- untuk home -->
+        <section id="home">
+            <img data-aos="fade-right"
+                src="Gambar1.avif"
+                alt="" width="">
+            <div class="kolom" data-aos="fade-up-left">
+                <p class="deskripsi">Belajar Progammming #dirumahaja</p>
+                <h2>Tetap santai, Walaupun banyak tugas</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, adipisci.</p>
+                <p><a href="" class="tbl-pink">Pelajari Lebih Lanjut</a></p>
+            </div>
+        </section>
+        <!-- untuk courses -->
+        <section id="courses">
+            <div class="kolom" data-aos="fade-up-right">
+                <p class="deskripsi">You Will Need This</p>
+                <h2>Online Courses</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ipsum. Odit quaerat optio sunt
+                    temporibus recusandae officia quis fugit autem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, ipsum. Odit quaerat optio sunt
+                    temporibus recusandae officia quis fugit autem?</p>
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+            <img data-aos="fade-up-left"
+                src="Gambar2.jpg"
+                alt="" width="">
+        </section>
+
+        <!-- untuk tutors -->
+        <section id="tutors" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Tutors</p>
+                    <h2>Tutors</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolor.</p>
+                </div>
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="Raiden_img.jfif" alt="Klik untuk memutar atau menghentikan audio" id="playButton1" style="cursor:pointer;">
+                        <audio id="audio1" src="Raiden_sound.aac"></audio>
+                        <p>Raiden Sujagat</p>
+
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="Speed_img.jfif" alt="Klik untuk memutar atau menghentikan audio" id="playButton2" style="cursor:pointer;">
+                        <audio id="audio2" src="Speed_sound.aac"></audio>
+                        <p>EL Kecepatan</p>
+
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="Windah_img.jfif" alt="Klik untuk memutar atau menghentikan audio" id="playButton3" style="cursor:pointer;">
+                        <audio id="audio3" src="Windah_sound.mpeg"></audio>
+                        <p>Windah Batubara</p>
+
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="eCHO_IMG.jpg" alt="Klik untuk memutar atau menghentikan audio" id="playButton4" style="cursor:pointer;">
+                        <audio id="audio4" src="echo_sound.mpeg"></audio>
+                        <p>ECHO</p>
+                    </div>
+                </div>
+                <script>
+                    function setupAudio(playButtonId, audioId) {
+                const playButton = document.getElementById(playButtonId);
+                const audio = document.getElementById(audioId);
+      
+                      playButton.addEventListener('click', function() {
+                 if (audio.paused) {
+                    audio.play();
+                } 
+                 else {
+                  audio.pause();
+                  audio.currentTime = 0; // Mengatur waktu kembali ke awal jika ingin memulai dari awal
+                }
+                });
+                }
+                setupAudio('playButton1', 'audio1');
+                setupAudio('playButton2', 'audio2');
+                setupAudio('playButton3', 'audio3');
+                setupAudio('playButton4', 'audio4');
+              </script>
+        </section>
+
+        <!-- untuk partners -->
+        <section id="partners">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Partner</p>
+                    <h2>Partnert</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque adipisci ullam corrupti impedit
+                        sapiente illum dolores, a aliquam voluptatibus dolore.</p>
+                </div>
+                <div class="partner-list">
+                    <div class="kartu-partner" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <img
+                            src="Garena_img.png" alt="Klik untuk memutar atau menghentikan audio" id="playButton5" style="cursor:pointer;">
+                            <audio id="audio5" src="Booyah.mpeg"></audio>
+                        <p>Garena</p>
+                    </div>
+                    <div class="kartu-partner" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <img src="RPL_img.png" />
+                        <p>RPL</p>
+                    </div>
+                    <div class="kartu-partner" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <img
+                            src="VSC_img.png" />
+                        <p>VISUAL SC</p>
+                    </div>
+                    <div class="kartu-partner" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <img
+                            src="nasa_img.jfif">
+                        <p>NASA</p>
+                    </div>
+                    <div class="kartu-partner" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <img
+                            src="Moonton_img.jfif" alt="Klik untuk memutar atau menghentikan audio" id="playButton6" style="cursor:pointer;">
+                            <audio id="audio6" src="OP_emel.aac"></audio>
+                        <p>Moonton</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function setupAudio(playButtonId, audioId) {
+            const playButton = document.getElementById(playButtonId);
+            const audio = document.getElementById(audioId);
+  
+                  playButton.addEventListener('click', function() {
+             if (audio.paused) {
+                audio.play();
+            } 
+             else {
+              audio.pause();
+              audio.currentTime = 0; // Mengatur waktu kembali ke awal jika ingin memulai dari awal
+            }
+            });
+            }
+            setupAudio('playButton5', 'audio5');
+            setupAudio('playButton6', 'audio6');
+          </script>
+        </section>
+    </div>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <style>
+            .path-0 {
+                animation: pathAnim-0 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes pathAnim-0 {
+                0% {
+                    d: path("M 0,400 L 0,100 C 79.17692307692306,95.45897435897436 158.35384615384612,90.9179487179487 234,101 C 309.6461538461539,111.0820512820513 381.7615384615385,135.78717948717951 458,128 C 534.2384615384615,120.2128205128205 614.6,79.93333333333334 707,74 C 799.4,68.06666666666666 903.8384615384616,96.47948717948718 993,95 C 1082.1615384615384,93.52051282051282 1156.0461538461539,62.14871794871795 1228,58 C 1299.9538461538461,53.85128205128205 1369.976923076923,76.92564102564103 1440,100 L 1440,400 L 0,400 Z");
+                }
+
+                25% {
+                    d: path("M 0,400 L 0,100 C 52.17692307692306,122.17948717948718 104.35384615384612,144.35897435897436 198,147 C 291.6461538461539,149.64102564102564 426.7615384615385,132.74358974358972 521,132 C 615.2384615384615,131.25641025641028 668.5999999999999,146.66666666666669 724,147 C 779.4000000000001,147.33333333333331 836.8384615384617,132.5897435897436 930,109 C 1023.1615384615383,85.41025641025642 1152.0461538461536,52.97435897435898 1243,50 C 1333.9538461538464,47.02564102564102 1386.9769230769232,73.51282051282051 1440,100 L 1440,400 L 0,400 Z");
+                }
+
+                50% {
+                    d: path("M 0,400 L 0,100 C 65.88461538461539,92.37435897435898 131.76923076923077,84.74871794871795 226,94 C 320.2307692307692,103.25128205128205 442.8076923076924,129.37948717948717 518,120 C 593.1923076923076,110.62051282051281 621.0000000000001,65.73333333333333 688,67 C 754.9999999999999,68.26666666666667 861.1923076923076,115.68717948717949 959,119 C 1056.8076923076924,122.31282051282051 1146.2307692307693,81.51794871794871 1225,71 C 1303.7692307692307,60.48205128205128 1371.8846153846152,80.24102564102564 1440,100 L 1440,400 L 0,400 Z");
+                }
+
+                75% {
+                    d: path("M 0,400 L 0,100 C 92.93846153846152,86.97179487179488 185.87692307692305,73.94358974358975 265,88 C 344.12307692307695,102.05641025641025 409.4307692307692,143.1974358974359 494,133 C 578.5692307692308,122.8025641025641 682.4,61.266666666666666 757,55 C 831.6,48.733333333333334 876.9692307692308,97.73589743589743 945,112 C 1013.0307692307692,126.26410256410257 1103.723076923077,105.78974358974358 1190,98 C 1276.276923076923,90.21025641025642 1358.1384615384613,95.10512820512821 1440,100 L 1440,400 L 0,400 Z");
+                }
+
+                100% {
+                    d: path("M 0,400 L 0,100 C 79.17692307692306,95.45897435897436 158.35384615384612,90.9179487179487 234,101 C 309.6461538461539,111.0820512820513 381.7615384615385,135.78717948717951 458,128 C 534.2384615384615,120.2128205128205 614.6,79.93333333333334 707,74 C 799.4,68.06666666666666 903.8384615384616,96.47948717948718 993,95 C 1082.1615384615384,93.52051282051282 1156.0461538461539,62.14871794871795 1228,58 C 1299.9538461538461,53.85128205128205 1369.976923076923,76.92564102564103 1440,100 L 1440,400 L 0,400 Z");
+                }
+            }
+        </style>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="5%" stop-color="#ff6900"></stop>
+                <stop offset="95%" stop-color="#abb8c3"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,400 L 0,100 C 79.17692307692306,95.45897435897436 158.35384615384612,90.9179487179487 234,101 C 309.6461538461539,111.0820512820513 381.7615384615385,135.78717948717951 458,128 C 534.2384615384615,120.2128205128205 614.6,79.93333333333334 707,74 C 799.4,68.06666666666666 903.8384615384616,96.47948717948718 993,95 C 1082.1615384615384,93.52051282051282 1156.0461538461539,62.14871794871795 1228,58 C 1299.9538461538461,53.85128205128205 1369.976923076923,76.92564102564103 1440,100 L 1440,400 L 0,400 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        <style>
+            .path-1 {
+                animation: pathAnim-1 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes pathAnim-1 {
+                0% {
+                    d: path("M 0,400 L 0,233 C 88.96923076923076,223.44871794871796 177.93846153846152,213.89743589743588 262,206 C 346.0615384615385,198.10256410256412 425.21538461538455,191.85897435897434 506,201 C 586.7846153846154,210.14102564102566 669.2000000000002,234.6666666666667 741,226 C 812.7999999999998,217.3333333333333 873.9846153846153,175.47435897435895 940,185 C 1006.0153846153847,194.52564102564105 1076.8615384615387,255.4358974358974 1161,272 C 1245.1384615384613,288.5641025641026 1342.5692307692307,260.78205128205127 1440,233 L 1440,400 L 0,400 Z");
+                }
+
+                25% {
+                    d: path("M 0,400 L 0,233 C 66.71794871794873,215.21025641025642 133.43589743589746,197.4205128205128 217,191 C 300.56410256410254,184.5794871794872 400.974358974359,189.52820512820514 483,207 C 565.025641025641,224.47179487179486 628.6666666666665,254.46666666666667 714,255 C 799.3333333333335,255.53333333333333 906.3589743589746,226.60512820512818 982,210 C 1057.6410256410254,193.39487179487182 1101.8974358974358,189.11282051282052 1173,195 C 1244.1025641025642,200.88717948717948 1342.0512820512822,216.94358974358974 1440,233 L 1440,400 L 0,400 Z");
+                }
+
+                50% {
+                    d: path("M 0,400 L 0,233 C 79.98974358974357,253.76410256410256 159.97948717948714,274.5282051282051 232,278 C 304.02051282051286,281.4717948717949 368.07179487179496,267.65128205128207 458,269 C 547.928205128205,270.34871794871793 663.7333333333332,286.8666666666667 747,278 C 830.2666666666668,269.1333333333333 880.9948717948716,234.88205128205126 955,233 C 1029.0051282051284,231.11794871794874 1126.2871794871796,261.6051282051282 1211,267 C 1295.7128205128204,272.3948717948718 1367.85641025641,252.6974358974359 1440,233 L 1440,400 L 0,400 Z");
+                }
+
+                75% {
+                    d: path("M 0,400 L 0,233 C 73.51538461538462,257.74615384615385 147.03076923076924,282.4923076923077 232,273 C 316.96923076923076,263.5076923076923 413.39230769230767,219.77692307692305 506,216 C 598.6076923076923,212.22307692307695 687.4000000000001,248.40000000000003 748,255 C 808.5999999999999,261.59999999999997 841.0076923076924,238.6230769230769 925,242 C 1008.9923076923076,245.3769230769231 1144.5692307692307,275.10769230769233 1239,278 C 1333.4307692307693,280.89230769230767 1386.7153846153847,256.94615384615383 1440,233 L 1440,400 L 0,400 Z");
+                }
+
+                100% {
+                    d: path("M 0,400 L 0,233 C 88.96923076923076,223.44871794871796 177.93846153846152,213.89743589743588 262,206 C 346.0615384615385,198.10256410256412 425.21538461538455,191.85897435897434 506,201 C 586.7846153846154,210.14102564102566 669.2000000000002,234.6666666666667 741,226 C 812.7999999999998,217.3333333333333 873.9846153846153,175.47435897435895 940,185 C 1006.0153846153847,194.52564102564105 1076.8615384615387,255.4358974358974 1161,272 C 1245.1384615384613,288.5641025641026 1342.5692307692307,260.78205128205127 1440,233 L 1440,400 L 0,400 Z");
+                }
+            }
+        </style>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="5%" stop-color="#ff6900"></stop>
+                <stop offset="95%" stop-color="#abb8c3"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,400 L 0,233 C 88.96923076923076,223.44871794871796 177.93846153846152,213.89743589743588 262,206 C 346.0615384615385,198.10256410256412 425.21538461538455,191.85897435897434 506,201 C 586.7846153846154,210.14102564102566 669.2000000000002,234.6666666666667 741,226 C 812.7999999999998,217.3333333333333 873.9846153846153,175.47435897435895 940,185 C 1006.0153846153847,194.52564102564105 1076.8615384615387,255.4358974358974 1161,272 C 1245.1384615384613,288.5641025641026 1342.5692307692307,260.78205128205127 1440,233 L 1440,400 L 0,400 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+    </svg>
+    <div id="contact">
+        <div class="footer">
+            <div class="footer-section">
+                <h3><a href="contact"></a>activty</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit recusandae, neque, tempora, sunt
+                    facere maiores eaque delectus perspiciatis natus repudiandae a voluptate! Suscipit tempore cumque
+                    vitae, aliquam quis distinctio?</p>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit recusandae, neque, tempora, sunt
+                    facere maiores eaque delectus perspiciatis natus repudiandae a voluptate! Suscipit tempore cumque
+                    vitae, aliquam quis distinctio?</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>trimunajty@gmail.com</p>
+                <p>razor_stt</p>
+                <p>wanx'still learning</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <p><b>Youtube: </b><b>-</b></p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 1999 Your Website. All rights reserved.</p>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
